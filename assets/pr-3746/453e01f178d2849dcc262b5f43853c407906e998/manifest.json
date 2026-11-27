@@ -1,0 +1,15 @@
+{
+  "pr": 3746,
+  "base": "f8e1513744f09cad0509ae93fdcabea49ace61ac",
+  "head": "453e01f178d2849dcc262b5f43853c407906e998",
+  "method": "bun run ui:dev on main and on the head, local API, Playwright headless Chromium; agent-fs and /api/fs/* stubbed in the browser, made-up data",
+  "device": "390x844 @2x, isMobile, hasTouch; cropped to the top 565 px",
+  "theme": "dark",
+  "fixture": "SessionThread with attachments (maxFiles 10), not connected, four made-up PNGs, draft 'Please review these four screenshots.'",
+  "states": {
+    "phone-four-images": "first message, four images attached",
+    "phone-session-four-images": "existing finished session, four images attached in the follow-up composer",
+    "phone-four-images-connect-focus": "phone-four-images, then focus Connect Files"
+  },
+  "gaps": ["light theme", "a real phone", "a real agent-fs server"]
+}
