@@ -1,0 +1,16 @@
+{
+  "pr": "desplega-ai/agent-swarm#3746",
+  "base": "f8e1513744f09cad0509ae93fdcabea49ace61ac",
+  "head": "d803627d08552066f437f95cc16c31ad201be5c3",
+  "capture": "bun run ui:dev on main and on the branch, local API, agent-fs and /api/fs/* stubbed in the browser, headless Chromium, dark theme, made-up data",
+  "devices": { "desktop": "1440x900, cropped to the app", "phone": "390x844 @2x, top 565 px" },
+  "states": {
+    "desktop-not-connected-before.png": "main: no key, a file picked, no guidance",
+    "desktop-send-error-before.png": "main: Send fails with the connect error",
+    "phone-not-connected-before.png": "main, phone: no key, a file picked",
+    "phone-send-error-before.png": "main, phone: Send fails",
+    "desktop-keyboard-focus-after.png": "branch: Tab reaches Connect Files"
+  },
+  "after_frames": "assets/app-thread-connect-hint/ at a49ba7614725ecc1e428545ee1e6524c1a84c741 (branch head 5a9ba5a08; same dashboard code as this head)",
+  "gaps": ["real agent-fs server", "light theme", "chromeless embed frame (unit test only)"]
+}
